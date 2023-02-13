@@ -204,11 +204,11 @@ if __name__ == "__main__":
 
     # We load the number of hidden units
 
-    n_hidden = 30
+    n_hidden = np.loadtxt('/FiBDL/data/n_hidden.txt').tolist()
 
     # We load the number of training epocs
 
-    epochs = 50
+    epochs = np.loadtxt('/FiBDL/data/n_epochs.txt').tolist()
 
     errors, MC_errors, std_maes, MC_maes, losses_std, MC_losses, times = [], [], [], [], [], [], []
     for i in range(10):
